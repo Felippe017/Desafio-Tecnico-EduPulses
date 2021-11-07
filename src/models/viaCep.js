@@ -17,27 +17,6 @@ const viaCEP = async (cep) => {
   return {
     message: 'CEP inválido',
   };
-  /* fetch(url)
-    .then((res) => res.json())
-    .then((json) => {
-      const { logradouro } = json;
-      const { bairro } = json;
-      const { localidade } = json;
-      const { uf } = json;
-      if (localidade !== 'São Paulo' && cep.length === 8) {
-        console.log('entrei aqui');
-        return {
-          logradouro, bairro, localidade, uf,
-        };
-      }
-      return {
-        message: 'CEP inválido',
-      };
-    }); */
 };
 
 module.exports = viaCEP;
-
-/* {
-    message: `O endereço de ${cep} é ${logradouro}, ${bairro} - ${localidade} - ${uf}`,
-  }; */
